@@ -12,6 +12,7 @@ export interface DoesThisMakeSenseOptions {
   endpoint?: string
   model?: string
   temperature?: number
+  systemPrompt?: string
 }
 
 export interface ValidationResult {

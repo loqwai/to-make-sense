@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "vitest run",
+    "test": "vitest run --bail 1 --pool=forks --poolOptions.forks.singleFork",
     "test:watch": "vitest --watch",
     "build": "tsc",
     "prepublishOnly": "npm run build"

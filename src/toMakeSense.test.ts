@@ -42,7 +42,12 @@ describe('toMakeSense', () => {
       }
       
       // ACT & ASSERT
-      await expect(nonsensicalExchange).not.toMakeSense()
+      try {
+        await expect(nonsensicalExchange).not.toMakeSense()
+      } catch (error) {
+        console.log('Nonsensical response test failed with:', error.message)
+        throw error
+      }
     })
   })
 })
