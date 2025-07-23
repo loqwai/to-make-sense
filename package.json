@@ -1,0 +1,44 @@
+{
+  "name": "@loqwai/to-make-sense",
+  "version": "0.0.1",
+  "description": "Vitest matcher that validates AI responses make sense in production contexts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vitest",
+    "testing",
+    "matcher",
+    "ai",
+    "llm",
+    "validation",
+    "ollama"
+  ],
+  "author": "loqwai",
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "2.1.8",
+    "typescript": "5.7.3",
+    "@types/node": "22.10.5"
+  },
+  "peerDependencies": {
+    "vitest": ">=0.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loqwai/toMakeSense.git"
+  },
+  "bugs": {
+    "url": "https://github.com/loqwai/toMakeSense/issues"
+  },
+  "homepage": "https://github.com/loqwai/toMakeSense#readme"
+}
