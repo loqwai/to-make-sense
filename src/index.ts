@@ -1,8 +1,6 @@
-export { toMakeSense } from './toMakeSense'
-export { doesThisMakeSense } from './doesThisMakeSense'
-export type { 
-  State, 
-  Message, 
-  DoesThisMakeSenseOptions, 
-  ValidationResult 
-} from './types'
+export { toMakeSense } from "./toMakeSense"
+export { doesThisMakeSense } from "./doesThisMakeSense"
+export type { State, Message, DoesThisMakeSenseOptions, ValidationResult } from "./types"
+
+// Import vitest setup to register the matcher
+import "./vitest"

@@ -87,7 +87,6 @@ describe("doesThisMakeSense", () => {
 
       it("should detect the response does not make sense", () => {
         // ASSERT
-        console.log("Nonsensical test result:", result)
         expect(result.makesSense).toBe(false)
       })
     })

@@ -1,0 +1,31 @@
+# Source files (we ship built files)
+src/
+*.ts
+!dist/*.d.ts
+
+# Test files
+*.test.*
+examples/
+vitest.config.ts
+dist/*.test.*
+dist/test-utils.*
+
+# Development files
+.github/
+CLAUDE.md
+tsconfig.json
+
+# Build artifacts
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/

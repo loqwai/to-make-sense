@@ -1,6 +1,6 @@
 {
-  "name": "@loqwai/to-make-sense",
-  "version": "0.0.1",
+  "name": "@hypnodroid/to-make-sense",
+  "version": "1.0.0",
   "description": "Vitest matcher that validates AI responses make sense in production contexts",
   "type": "module",
   "main": "dist/index.js",
@@ -11,7 +11,10 @@
   "scripts": {
     "test": "vitest run --bail 1 --pool=forks --poolOptions.forks.singleFork",
     "test:watch": "vitest --watch",
-    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit false",
+    "deploy": "npm test && npm run deploy:force",
+    "deploy:force": "npm run build && npm publish --access public",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -35,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loqwai/toMakeSense.git"
+    "url": "git+https://github.com/loqwai/to-make-sense.git"
   },
   "bugs": {
-    "url": "https://github.com/loqwai/toMakeSense/issues"
+    "url": "https://github.com/loqwai/to-make-sense/issues"
   },
-  "homepage": "https://github.com/loqwai/toMakeSense#readme"
+  "homepage": "https://github.com/loqwai/to-make-sense#readme"
 }
