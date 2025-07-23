@@ -15,22 +15,6 @@ import { doesThisMakeSense } from "./doesThisMakeSense"
  * 4. Run tests: npm test
  */
 
-describe("Ollama connection", () => {
-  it("should be able to reach Ollama API", async () => {
-    const response = await fetch("http://localhost:11434/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: "deepseek-r1",
-        messages: [{ role: "user", content: "test" }],
-        stream: false,
-      }),
-    })
-
-    expect(response.ok).toBe(true)
-  })
-})
-
 describe("doesThisMakeSense", () => {
   it("should exist", () => {
     expect(doesThisMakeSense).toBeDefined()

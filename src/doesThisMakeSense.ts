@@ -1,7 +1,7 @@
 import type { State, DoesThisMakeSenseOptions, ValidationResult } from "./types"
 
 export const doesThisMakeSense = async (state: State, options: DoesThisMakeSenseOptions = {}): Promise<ValidationResult> => {
-  const { endpoint = "http://localhost:11434/api/chat", model = "gemma3n:latest", temperature = 0.3, systemPrompt } = options
+  const { endpoint = "http://localhost:11434/api/chat", model = "gemma2:2b", temperature = 0.3, systemPrompt } = options
 
   const { messages, seed } = state
 
